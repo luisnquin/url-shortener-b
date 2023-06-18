@@ -1,7 +1,10 @@
+"""All theAPI models here"""
+
+# pylint: disable=no-name-in-module
 from pydantic import BaseModel
 
 
-class StandardResponse:
+class StandardResponse:  # pylint: disable=too-few-public-methods
     """Standard response format for API endpoints."""
     message: str
     data: any
@@ -11,12 +14,12 @@ class StandardResponse:
         self.data = data
 
 
-class URLItem(BaseModel):
+class URLItem(BaseModel):  # pylint: disable=too-few-public-methods
     """Data model for individual URL items."""
     id: str
     url: str
 
 
-class URLPayload(BaseModel):
+class URLPayload(BaseModel):  # pylint: disable=too-few-public-methods
     """Payload model for creating a short URL."""
     url: str
