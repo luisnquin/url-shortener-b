@@ -1,0 +1,6 @@
+POST http://127.0.0.1:8000/create
+Content-Type: application/json
+
+{
+    "url": "https://google.com"
+}
